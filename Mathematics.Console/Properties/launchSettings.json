@@ -2,7 +2,7 @@
   "profiles": {
     "Mathematics.Console": {
       "commandName": "Project",
-      "commandLineArgs": "+ 2 7"
+      "commandLineArgs": "pythagorean 3 4"
     }
   }
 }
