@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BlockBuster.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "CSV GetCheckedOutMovies"
+    }
+  }
+}

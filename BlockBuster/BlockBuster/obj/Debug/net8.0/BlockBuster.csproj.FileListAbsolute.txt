@@ -41,3 +41,4 @@ C:\Users\apela\Desktop\SE_407_AP\BlockBuster\BlockBuster\obj\Debug\net8.0\refint
 C:\Users\apela\Desktop\SE_407_AP\BlockBuster\BlockBuster\obj\Debug\net8.0\BlockBuster.pdb
 C:\Users\apela\Desktop\SE_407_AP\BlockBuster\BlockBuster\obj\Debug\net8.0\BlockBuster.genruntimeconfig.cache
 C:\Users\apela\Desktop\SE_407_AP\BlockBuster\BlockBuster\obj\Debug\net8.0\ref\BlockBuster.dll
+C:\Users\apela\Desktop\SE_407_AP\BlockBuster\BlockBuster\bin\Debug\net8.0\config.json

@@ -1,0 +1,4 @@
+MovieId,Title,ReleaseYear,GenreId,DirectorId,DirectorId,FirstName,MiddleName,LastName,GenreId,GenreDescr
+4,Raging Bull,1980,5,4,0,,,,0,
+26,The Bridge on the River Kwai,1957,2,9,0,,,,0,
+33,Amadeus,1984,1,8,0,,,,0,
