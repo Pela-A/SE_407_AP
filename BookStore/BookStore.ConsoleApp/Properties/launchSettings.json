@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BookStore.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "Console GetBookByTitle \"Canterbury Tales\""
+    }
+  }
+}
