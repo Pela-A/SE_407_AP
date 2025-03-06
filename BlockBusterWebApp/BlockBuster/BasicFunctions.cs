@@ -18,6 +18,19 @@ namespace BlockBuster
 
         }
 
+        public static Movie? GetMovieWithDetailsById(int movieId)
+        {
+            using (var context = new Se407BlockBusterContext())
+            {
+                return
+                    context
+                        .Movies
+                        .Include(movie => movie.Director)
+                        .Include(movie => movie.Genre)
+                        .FirstOrDefault(movie => movie.MovieId == movieId);
+            }
+        }
+
         // Get all movies
         public static List<Movie> GetAllMovies()
         {
@@ -55,7 +68,7 @@ namespace BlockBuster
                             context.Movies,
                             t => t.MovieId,
                             m => m.MovieId,
-                            (t,m) => m
+                            (t, m) => m
                         )
                         .ToList();
             }
@@ -67,7 +80,7 @@ namespace BlockBuster
         public static List<Movie> GetMoviesByGenreDescription(string genreDesc)
         {
 
-            using (var context = new Se407BlockBusterContext ())
+            using (var context = new Se407BlockBusterContext())
             {
                 return
                     context
@@ -78,7 +91,7 @@ namespace BlockBuster
                             context.Movies,
                             g => g.GenreId,
                             m => m.GenreId,
-                            (g,m) => m
+                            (g, m) => m
                         )
                         .ToList();
             }
@@ -106,6 +119,45 @@ namespace BlockBuster
         }
 
 
+
+        #region Director Functions
+        public static List<Director> GetAllDirectors()
+        {
+            using (var context = new Se407BlockBusterContext())
+            {
+                return
+                    context.Directors.ToList();
+            }
+        }
+
+        public static Director? GetDirectorById(int directorId)
+        {
+            using (var context = new Se407BlockBusterContext())
+            {
+                return
+                    context.Directors.FirstOrDefault(dir => dir.DirectorId == directorId);
+            }
+        }
+        #endregion
+
+        #region Genre Functions
+        public static List<Genre> GetAllGenres()
+        {
+            using (var context = new Se407BlockBusterContext())
+            {
+                return
+                    context.Genres.ToList();
+            }
+        }
+        public static Genre? GetGenreById(int genreId)
+        {
+            using (var context = new Se407BlockBusterContext())
+            {
+                return
+                    context.Genres.FirstOrDefault(genre => genre.GenreId == genreId);
+            }
+        }
+        #endregion
 
     }
 }
